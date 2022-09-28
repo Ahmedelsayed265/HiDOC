@@ -43,8 +43,8 @@ body.RTL {
   overflow-x: hidden;
 }
 body.RTL header nav .logo img {
-  bottom: 16px;
-  right: 78px;
+  bottom: 17px;
+  right: 80px;
 }
 body.RTL header nav ul li a {
   font-size: 20px;
@@ -959,7 +959,7 @@ body .copy_right p {
     right: auto;
   }
   body.RTL header nav.res_active .logo {
-    gap: 6px;
+    gap: 8px;
   }
   body.RTL header main .left_main {
     padding-right: 30px;
@@ -968,7 +968,7 @@ body .copy_right p {
     padding-right: 0;
   }
   body.RTL .doctors .get_start .container h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
   body.RTL .doctors .row .docs_slider .slider_wrap {
     transform: rotate(90deg);
