@@ -941,7 +941,13 @@ body {
         padding-right: 0;
       }
       .doctors .get_start .container h2 {
-        font-size: 28px;
+        font-size: 26px;
+        span{
+          font-size: 25px;
+        }
+        span small{
+          font-size: 25px;
+        }
       }
       .doctors .row .docs_slider .slider_wrap {
         transform: rotate(90deg);

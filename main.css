@@ -968,7 +968,13 @@ body .copy_right p {
     padding-right: 0;
   }
   body.RTL .doctors .get_start .container h2 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+  body.RTL .doctors .get_start .container h2 span {
+    font-size: 25px;
+  }
+  body.RTL .doctors .get_start .container h2 span small {
+    font-size: 25px;
   }
   body.RTL .doctors .row .docs_slider .slider_wrap {
     transform: rotate(90deg);
