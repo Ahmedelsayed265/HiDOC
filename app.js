@@ -20,15 +20,6 @@ for (let i = 0; i < menuLinks.length; i++) {
     togglerIcon.classList.add("fa-bars");
   });
 }
-//---------------------toggle language-----------------------//
-let body = document.querySelector("body");
-let langToggler = document.querySelector("#lang");
-langToggler.addEventListener("click", () => {
-  body.classList.toggle("RTL");
-  body.classList.contains("RTL")
-    ? (langToggler.innerHTML = "AR")
-    : (langToggler.innerHTML = "EN");
-});
 //--------------------animate counting-----------------------//
 let numbers = document.querySelectorAll(".num");
 let started = false;
