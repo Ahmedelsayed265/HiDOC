@@ -967,6 +967,9 @@ body .copy_right p {
   body.RTL .service .special_services .spcial_content {
     padding-right: 0;
   }
+  body.RTL .doctors .get_start .container h2 {
+    font-size: 30px;
+  }
   body.RTL .doctors .row .docs_slider .slider_wrap {
     transform: rotate(90deg);
   }
