@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  line-height: 36px;
+  scroll-behavior: smooth;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+$dark_blue: #172048;
+$hover_blue: #05789d;
+$linear_blue: linear-gradient(97.65deg, #56e0e0 0.33%, #007299 93.35%);
+$linear_blue2: linear-gradient(
+    180deg,
+    #50d8db 0%,
+    #05799d 38.02%,
+    #007299 100%
+  ),
+  linear-gradient(0deg, #ffffff, #ffffff);
+$btn_shadow: 0px 10px 15px 0px #01739933;
+$home_background: #f4feff;
+$black_color: #000;
+$white: #fff;
+$light_gray: #c4c4c4;
+.span {
+  background: $linear_blue;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background-color: $white;
+}
+::-webkit-scrollbar-thumb {
+  background-image: $linear_blue;
+  height:300px;
+  box-shadow: $btn_shadow;
+}
+@mixin centerFlex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin centerAbsolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin clearInput {
+  border: none;
+  background: none;
+  outline: none;
+}
