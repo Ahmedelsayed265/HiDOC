@@ -697,7 +697,7 @@ body footer .col .social a {
   justify-content: center;
 }
 body footer .col .social a i {
-  color: #172048;
+  color: #fff;
 }
 body footer .col .head {
   padding-left: 80px;
@@ -1001,13 +1001,26 @@ body header nav.res_active .nav_btns {
   }
   body .doctors .row {
     padding: 80px 30px;
+    gap: 70px;
   }
   body .doctors .row .about_docs .text {
     font-weight: 400;
   }
+  body .doctors .row .docs_slider {
+    gap: 50px;
+  }
   body .doctors .row .docs_slider .slider_wrap {
     width: 100%;
     height: 310px;
+    transform: rotate(90deg);
+  }
+  body .doctors .row .docs_slider .slider_wrap .slide {
+    top: -10px;
+    left: 35px;
+    width: calc(100% - 70px);
+    height: calc(100% + 20px);
+    transform: rotate(-90deg);
+    border-radius: 251.5px 251.5px 10px 10px;
   }
   body .doctors .row .docs_slider nav button {
     width: 12px;
