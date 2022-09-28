@@ -1,6 +1,7 @@
 //-----------------responsiveNav----------------------------//
 let toggler = document.querySelector(".toggle");
 let togglerIcon = document.querySelector(".toggle i");
+let menuLinks = document.querySelectorAll(".nav_link");
 let nav = document.querySelector("header nav");
 toggler.addEventListener("click", () => {
   nav.classList.toggle("res_active");
@@ -11,6 +12,22 @@ toggler.addEventListener("click", () => {
     togglerIcon.classList.add("fa-bars");
     togglerIcon.classList.remove("fa-times");
   }
+});
+for (let i = 0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener("click", () => {
+    nav.classList.remove("res_active");
+    togglerIcon.classList.remove("fa-times");
+    togglerIcon.classList.add("fa-bars");
+  });
+}
+//---------------------toggle language-----------------------//
+let body = document.querySelector("body");
+let langToggler = document.querySelector("#lang");
+langToggler.addEventListener("click", () => {
+  body.classList.toggle("RTL");
+  body.classList.contains("RTL")
+    ? (langToggler.innerHTML = "AR")
+    : (langToggler.innerHTML = "EN");
 });
 //------------------service cards----------------------------//
 let cards = document.querySelectorAll(".cards_container .card");
@@ -26,7 +43,7 @@ cards.forEach(card =>
 //------------------fixed navbar----------------------------//
 let fixPoint = document.querySelector("header main").offsetTop;
 window.onscroll = function() {
-  if (this.scrollY >= fixPoint) {
+  if (this.scrollY >= fixPoint - 50) {
     nav.classList.add("active");
   } else {
     nav.classList.remove("active");
