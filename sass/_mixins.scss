@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
   line-height: 36px;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 ul {
   list-style: none;
@@ -42,7 +43,7 @@ $light_gray: #c4c4c4;
 }
 ::-webkit-scrollbar-thumb {
   background-image: $linear_blue;
-  height:300px;
+  height: 300px;
   box-shadow: $btn_shadow;
 }
 @mixin centerFlex {

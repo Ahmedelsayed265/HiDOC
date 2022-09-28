@@ -1,3 +1,17 @@
+//-----------------responsiveNav----------------------------//
+let toggler = document.querySelector(".toggle");
+let togglerIcon = document.querySelector(".toggle i");
+let nav = document.querySelector("header nav");
+toggler.addEventListener("click", () => {
+  nav.classList.toggle("res_active");
+  if (togglerIcon.classList.contains("fa-bars")) {
+    togglerIcon.classList.remove("fa-bars");
+    togglerIcon.classList.add("fa-times");
+  } else {
+    togglerIcon.classList.add("fa-bars");
+    togglerIcon.classList.remove("fa-times");
+  }
+});
 //------------------service cards----------------------------//
 let cards = document.querySelectorAll(".cards_container .card");
 function removeAll() {
@@ -10,7 +24,6 @@ cards.forEach(card =>
   })
 );
 //------------------fixed navbar----------------------------//
-let nav = document.querySelector("header nav");
 let fixPoint = document.querySelector("header main").offsetTop;
 window.onscroll = function() {
   if (this.scrollY >= fixPoint) {
@@ -49,10 +62,7 @@ if (navigator.geolocation) {
         attribution:
           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
-      L.marker(coords)
-        .addTo(map)
-        .bindPopup("This is your Location")
-        .openPopup();
+      L.marker(coords).addTo(map).bindPopup("This is your Location");
       L.marker(pos).addTo(map).bindPopup("This is our Location").openPopup();
     },
     function() {
@@ -77,14 +87,14 @@ for (let i = 0; i < slides.length; i++) {
   ),url(${doctors[i]})`;
 }
 for (let i = 0; i < navBtns.length; i++) {
-  navBtns[i].addEventListener("click",()=>{
+  navBtns[i].addEventListener("click", () => {
     removeAllSlides();
     currentSlide = i;
     slides[currentSlide].classList.add("active");
     navBtns[currentSlide].classList.add("active");
     stopLooping();
     startLooping();
-  })
+  });
 }
 function removeAllSlides() {
   slides.forEach(slide => slide.classList.remove("active"));
@@ -93,7 +103,7 @@ function removeAllSlides() {
 function startLooping() {
   time = setInterval(() => {
     nextSlide();
-  },4000);
+  }, 4000);
 }
 function stopLooping() {
   clearInterval(time);
