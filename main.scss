@@ -599,7 +599,8 @@ body {
     grid-template-columns: repeat(4, 1fr);
     padding: 40px 100px 20px 100px;
     .col {
-      &:nth-child(4) {
+      &:nth-child(4),
+      &:nth-child(2) {
         .head {
           padding-left: 40px;
         }
@@ -620,7 +621,7 @@ body {
       }
       p {
         margin-top: 10px;
-        font-size: 16px;
+        font-size: 15px;
         color: $light_gray;
         line-height: 24px;
       }
@@ -663,6 +664,34 @@ body {
           color: $light_gray;
           strong {
             color: $dark_blue;
+          }
+        }
+        h5 {
+          color: $dark_blue;
+          &:nth-child(1){
+            span{
+              margin-left: 31px;
+            }
+          }
+          &:nth-child(3){
+            span{
+              margin-left: 55px;
+            }
+          }
+          &:nth-child(4){
+            span{
+              margin-left: 49px;
+            }
+          }
+          &:nth-child(5){
+            span{
+              margin-left: 42px;
+            }
+          }
+          span {
+            font-weight: 400;
+            color: $light_gray;
+            margin-left: 15px;
           }
         }
       }
