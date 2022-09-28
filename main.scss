@@ -441,7 +441,8 @@ body {
                 #02749a 130%
               ),
               url(images/doc4.jpg);
-            background-size: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
             background-position: 50%;
             &.active {
               opacity: 1;
@@ -667,23 +668,23 @@ body {
         }
         h5 {
           color: $dark_blue;
-          &:nth-child(1){
-            span{
+          &:nth-child(1) {
+            span {
               margin-left: 31px;
             }
           }
-          &:nth-child(3){
-            span{
+          &:nth-child(3) {
+            span {
               margin-left: 55px;
             }
           }
-          &:nth-child(4){
-            span{
+          &:nth-child(4) {
+            span {
               margin-left: 49px;
             }
           }
-          &:nth-child(5){
-            span{
+          &:nth-child(5) {
+            span {
               margin-left: 42px;
             }
           }

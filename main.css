@@ -480,7 +480,8 @@ body .doctors .row .docs_slider .slider_wrap .slide {
   height: calc(100% - 28px);
   border-radius: 251.5px 10px 10px 251.5px;
   background-image: linear-gradient(rgba(2, 116, 154, 0.5), #02749a 130%), url(images/doc4.jpg);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 50%;
 }
 body .doctors .row .docs_slider .slider_wrap .slide.active {
