@@ -189,7 +189,6 @@ body header main .right_main {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   position: relative;
-  border-radius: 338px 0px 0px 30px;
 }
 body header main .right_main .round {
   position: absolute;
@@ -784,7 +783,6 @@ body .copy_right p {
   body header main .right_main {
     width: 100%;
     height: 760px;
-    border-radius: 284px 0 0 40px;
   }
   body header main .right_main .round {
     width: 560px;
@@ -952,7 +950,6 @@ body header nav.res_active .nav_btns {
   }
   body header main .right_main {
     height: 75vh;
-    border-radius: 188px 0 0 30px;
   }
   body header main .right_main .round {
     width: 90%;
