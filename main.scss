@@ -811,6 +811,35 @@ body {
   body {
     header {
       nav {
+        &.res_active {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+          background-color: $white;
+          z-index: 9999999999999;
+          align-items: baseline;
+          .logo {
+            img {
+              bottom: 36px;
+            }
+          }
+          .logo,
+          .nav_btns {
+            height: 80px;
+            @include centerFlex();
+          }
+          .nav_btns {
+            position: absolute;
+            top: 0;
+            right: 30px;
+          }
+          ul {
+            @include centerAbsolute();
+            flex-direction: column;
+            display: flex;
+          }
+        }
         ul {
           display: none;
         }
