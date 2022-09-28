@@ -44,8 +44,7 @@ body.RTL {
 }
 body.RTL header nav .logo img {
   bottom: 16px;
-  width: 14px;
-  right: 73px;
+  right: 78px;
 }
 body.RTL header nav ul li a {
   font-size: 20px;
@@ -960,7 +959,7 @@ body .copy_right p {
     right: auto;
   }
   body.RTL header nav.res_active .logo {
-    gap: 4px;
+    gap: 6px;
   }
   body.RTL header main .left_main {
     padding-right: 30px;
