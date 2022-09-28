@@ -29,6 +29,22 @@ langToggler.addEventListener("click", () => {
     ? (langToggler.innerHTML = "AR")
     : (langToggler.innerHTML = "EN");
 });
+//--------------------animate counting-----------------------//
+let numbers = document.querySelectorAll(".num");
+let started = false;
+function startCount(element) {
+  let goal = element.dataset.goal;
+  let count = setInterval(() => {
+    element.textContent++;
+    if (element.textContent == goal) {
+      clearInterval(count);
+    }
+  }, 1500 / goal);
+}
+if (!started) {
+  numbers.forEach(num => startCount(num));
+}
+started = true;
 //------------------service cards----------------------------//
 let cards = document.querySelectorAll(".cards_container .card");
 function removeAll() {
