@@ -44,8 +44,8 @@ body.RTL {
   font-family: "Tajawal", serif;
 }
 body.RTL header nav .logo img {
-  bottom: 17px;
-  right: 90px;
+  bottom: 18px;
+  right: 94px;
 }
 body.RTL header nav ul li a {
   font-size: 20px;
@@ -468,7 +468,7 @@ body .doctors .row .about_docs .text {
 body .doctors .row .about_docs h3 {
   font-size: 40px;
   margin-bottom: 20px;
-  line-height: 44px;
+  line-height: 48px;
 }
 body .doctors .row .about_docs .dep_wrap {
   width: 100%;
@@ -965,11 +965,11 @@ body .copy_right p {
     padding-top: 40px;
   }
   body.RTL header main .left_main .head h2 {
-    font-size: 30px;
-    line-height: 56px;
+    font-size: 28px;
+    line-height: 60px;
   }
   body.RTL header nav.res_active .logo {
-    gap: 8px;
+    gap: 6px;
   }
   body.RTL header main .left_main {
     padding-right: 30px;
@@ -1139,6 +1139,9 @@ body header nav.res_active .nav_btns {
   }
   body .doctors .row .about_docs .text {
     font-weight: 400;
+  }
+  body .doctors .row .about_docs h3 {
+    font-size: 36px;
   }
   body .doctors .row .docs_slider {
     gap: 50px;
