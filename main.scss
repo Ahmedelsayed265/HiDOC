@@ -2,10 +2,11 @@
 body.RTL {
   direction: rtl;
   overflow-x: hidden;
+  font-family: "Tajawal", serif;
   header {
     nav .logo img {
       bottom: 17px;
-      right: 80px;
+      right: 90px;
     }
     nav ul li a {
       font-size: 20px;
@@ -49,7 +50,7 @@ body.RTL {
     }
     .links {
       padding-left: 0 !important;
-      p{
+      p {
         padding-left: 0;
       }
       h5 {
@@ -63,10 +64,11 @@ body.RTL {
   footer .col .logo img {
     bottom: 16px;
     width: 14px;
-    right: 73px;
+    right: 90px;
   }
 }
 body {
+  font-family: "Poppins", sans-serif;
   background: $home_background;
   position: relative;
   header {
@@ -435,6 +437,7 @@ body {
         h3 {
           font-size: 40px;
           margin-bottom: 20px;
+          line-height: 44px;
         }
         .dep_wrap {
           width: 100%;
@@ -924,14 +927,21 @@ body {
 }
 @media (max-width: 450px) {
   body {
-    &.RTL{
+    &.RTL {
       overflow-x: hidden;
       header nav.res_active .nav_btns {
         left: 30px;
         top: 0;
         right: auto;
       }
-      header nav.res_active .logo{
+      header main .left_main .head{
+        padding-top: 40px;
+      }
+      header main .left_main .head h2 {
+        font-size: 30px;
+        line-height: 56px;
+      }
+      header nav.res_active .logo {
         gap: 8px;
       }
       header main .left_main {
@@ -942,16 +952,16 @@ body {
       }
       .doctors .get_start .container h2 {
         font-size: 26px;
-        span{
+        span {
           font-size: 25px;
         }
-        span small{
+        span small {
           font-size: 25px;
         }
       }
       .doctors .row .docs_slider .slider_wrap {
         transform: rotate(90deg);
-        .slide{
+        .slide {
           right: 34px;
         }
       }
@@ -1006,7 +1016,7 @@ body {
         .left_main {
           padding-left: 30px;
           .head {
-            padding-top: 20px;
+            padding-top: 30px;
             h2 {
               font-size: 35px;
               line-height: 60px;
@@ -1158,7 +1168,7 @@ body {
       padding: 30px;
       .hed {
         margin-bottom: 30px;
-        font-size: 32px;
+        font-size: 30px;
         line-height: 64px;
       }
       .row .form_container form .info_grid {

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HaiDoc</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+</head>
+
+<body class="RTL">
+    <header class="sec" id="about">
+        <nav>
+            <a href="#" class="logo">هاي<span> دوك</span><img src="images/Vector.png" alt="logo"></a>
+            <ul>
+                <li><a class="nav_link active about" href="#about">نبذة عنا</a></li>
+                <li><a class="nav_link ser" href="#ser">الخدمات</a></li>
+                <li><a class="nav_link doc" href="#doc">الاطباء</a></li>
+                <li><a class="nav_link con" href="#con">تواصل معنا</a></li>
+            </ul>
+            <div class="nav_btns">
+                <button><a href="index.html">EN</a></button>
+                <button class="toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+        <main>
+            <div class="left_main">
+                <div class="head">
+                    <h2>نحن على استعداد<br><span class="span">للمساعده فى مشاكلك</span><br>الصحية</h2>
+                </div>
+                <p>في أوقات مثل اليوم ، تعد صحتك مهمة جدًا ، خاصة وأن عدد حالات COVID-19 يتزايد يومًا بعد يوم ، لذلك نحن
+                    على استعداد لمساعدتك في استشارتك الصحية</p>
+                <button class="try">جرب استشارة مجانية</button>
+                <div class="counts">
+                    <div class="count">
+                        <h3><span class="num" data-goal="200" data-goal="200">0</span> <i class="fas fa-plus"></i></h3>
+                        <p>طبيب<br>نشط</p>
+                    </div>
+                    <div class="count">
+                        <h3><span class="num" data-goal="15">0</span>k <i class="fas fa-plus"></i></h3>
+                        <p>مستخدم<br>نشط</p>
+                    </div>
+                    <div class="count">
+                        <h3><span class="num" data-goal="50">0</span> <i class="fas fa-plus"></i></h3>
+                        <p>صيدلية<br>نشطة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right_main">
+                <div class="round">
+                    <div class="image">
+                        <img src="images/head2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+    <div class="brands">
+        <div class="box"><img src="images/brand1.png" alt="b1"></div>
+        <div class="box"><img src="images/brand2.png" alt="b2"></div>
+        <div class="box"><img src="images/brand3.png" alt="b3"></div>
+        <div class="box"><img src="images/brand4.png" alt="b4"></div>
+        <div class="box"><img src="images/brand5.png" alt="b5"></div>
+    </div>
+    <section class="service sec" id="ser">
+        <h3>فئات <span class="span">خدماتنا</span> الرئيسية</h3>
+        <div class="cards_container">
+            <div class="card">
+                <div class="image">
+                    <img src="images/ser1.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>تحدث الى الطبيب</h4>
+                    <p>يمكنك الاتصال بشكل مباشر وسريع وفعال ، ولا داعي للشك في جودة الاستشارة والعلاج المقدمين.</p>
+                </div>
+            </div>
+            <div class="card active">
+                <div class="image">
+                    <img src="images/ser2.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>متجر الادوية</h4>
+                    <p>تحدث عن الشكاوى الصحية التي تواجهها ولا تتردد في السؤال عن العلاج المناسب.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="images/ser3.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>زيارة المستشفيات</h4>
+                    <p>احصل على أولوية الخدمات في المستشفيات مع هاي دوك. مما يسمح لك بالذهاب إلى المستشفى بشكل عملي أكثر
+                        وتوفير الوقت.</p>
+                </div>
+            </div>
+        </div>
+        <div class="special_services">
+            <div class="frame">
+                <div class="round2">
+                    <div class="image">
+                        <img src="images/doctora.png" alt="doc">
+                    </div>
+                </div>
+            </div>
+            <div class="spcial_content">
+                <h3>يوجد <span class="span">خدمات خاصة</span></h3>
+                <p>في أوقات مثل اليوم ، تعد صحتك مهمة جدًا ، خاصة وأن عدد حالات COVID-19 يتزايد يومًا بعد يوم ، لذلك نحن
+                    على استعداد لمساعدتك في استشارتك الصحية</p>
+                <div class="ser_grid">
+                    <div class="serv">
+                        <div class="icon">
+                            <img src="images/icon1.png" alt="icon1">
+                        </div>
+                        <article>
+                            <h5>اختبار Covid-19</h5>
+                            <p>يمكن إجراء اختبار فيروس كورونا من خلال السوائل الموجودة في الأنف أو الفم، وعادة ما يتطلب
+                                أن يكون لدى المريض أعراض الفيروس، ويفضل أن يكون هناك حمى وسعال. ويتطلب معدات متخصصة لأخذ
+                                المسحات وتشغيل الاختبار.</p>
+                        </article>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <img src="images/icon2.png" alt="icon2">
+                        </div>
+                        <article>
+                            <h5>مكملات عشبية</h5>
+                            <p>يمكن أن يتسبب النظام الغذائي الذي يفتقر إلى القيمة الغذائية في نقص الفيتامينات، مما يمكن
+                                أن يؤدي إلى مشاكل مثل نزيف اللثة وتقرحات الفم وضعف الرؤية الليلية وغير ذلك. يمكن أن يمنح
+                                تناول الفيتامينات أجسامنا الدفعة التي يحتاجها لأداء والبقاء بصحة جيدة.</p>
+                        </article>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <img src="images/icon3.png" alt="icon3">
+                        </div>
+                        <article>
+                            <h5>فحص مخبري</h5>
+                            <p>القسم المسؤول عن تحليل عينات الجسم المختلفة، مثل: الدم والبراز والبول والسائل المنوي
+                                باستخدام التقنيات والأجهزة الخاصة للكشف عن أي خلل أو مشكلة في الجسم, يتم إجراء تحليل TSH
+                                أو فحص الهرمون المنبه للغدة الدرقية (بالإنجليزية: Thyroid Stimulating Hormone) .
+                            </p>
+                        </article>
+                    </div>
+                    <div class="serv">
+                        <div class="icon">
+                            <img src="images/icon4.png" alt="icon4">
+                        </div>
+                        <article>
+                            <h5>تقويم الاسنان</h5>
+                            <p>تقويم اسنان له أهمية كبيرة للغاية في علاج بعض العيوب التي تظهر عند ظهور الأسنان الدائمة
+                                للإنسان، حيث يمكن أن يقوم بمعالجة الاعوجاج الذي يتواجد في الأسنان كما يعالج ظهور أسنان
+                                فوق بعضها كعيب خلقي في الأسنان، وكذلك يساعد على سد بعض الفراغات التي توجد بين الأسنان.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="doctors sec" id="doc">
+        <div class="row">
+            <div class="about_docs">
+                <p>أطبائنا</p>
+                <h3 class="span">أطباء مؤهلين</h3>
+                <p class="text">يتم التعامل معها مباشرة من قبل الأطباء العامين والأطباء المتخصصين المحترفين وذوي الخبرة.
+                </p>
+                <div class="dep_wrap">
+                    <div class="image">
+                        <p>جراحه</p>
+                        <h5>د. وهدان <br> حلقولو</h5>
+                        <a href="#">اقرأ المزيد</a>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>عرض جميع الأطباء</button>
+                </div>
+            </div>
+            <div class="docs_slider">
+                <div class="slider_wrap">
+                    <div class="slide active"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                </div>
+                <nav>
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </nav>
+            </div>
+        </div>
+        <article class="get_start">
+            <div class="container">
+                <h2>ابدأ <span class="span">رحلة علاجك مع <small>هاي </small>دوك</span></h2>
+                <p>يمكنك الاتصال بشكل مباشر وسريع وفعال ، ولا داعي للشك في جودة الاستشارة والعلاج المقدمين. تحدث عن
+                    الشكاوى الصحية التي تواجهها ولا تتردد في السؤال عن العلاج المناسب.</p>
+                <button>هيا بنا نبدأ</button>
+            </div>
+        </article>
+    </section>
+    <section class="contact sec" id="con">
+        <h2 class="hed">ابق على <span class="span">تواصل معنا</span></h2>
+        <div class="row">
+            <div class="form_container">
+                <form action="" method="get">
+                    <div class="info_grid">
+                        <div class="inp_field">
+                            <label for="name">اسمك كاملا</label>
+                            <input type="text" placeholder="احمد السيد محمد" id="name">
+                        </div>
+                        <div class="inp_field">
+                            <label for="email">البريد الالكترونى</label>
+                            <input type="email" placeholder="Example@gmail.com" id="email">
+                        </div>
+                        <div class="inp_field">
+                            <label for="sub">العنوان</label>
+                            <input type="text" placeholder="ضع عنوانا لرسالتك" id="sub">
+                        </div>
+                        <div class="inp_field">
+                            <label for="phone">الهاتف</label>
+                            <input type="tel" placeholder="+00 374 12 465" id="phone">
+                        </div>
+                    </div>
+                    <div class="text_area">
+                        <label for="Message">رسالتك</label>
+                        <textarea id="Message" rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+                    </div>
+                    <button type="submit">إرسال</button>
+                </form>
+            </div>
+            <div class="map_container" id="mapLocation"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="col">
+            <a href="#" class="logo">هاي<span> دوك</span><img src="images/Vector.png" alt="logo"></a>
+            <p>في أوقات مثل اليوم ، تعد صحتك مهمة جدًا ، خاصة وأن عدد حالات COVID-19 يتزايد يومًا بعد يوم ، لذلك نحن على
+                استعداد لمساعدتك في استشارتك الصحية</p>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="col">
+            <h4 class="head ">الجدول الأسبوعي</h4>
+            <div class="links">
+                <h5>الاثنين-الثلاثاء : <span>08:00AM - 05:00PM</span></h5>
+                <h5>الاربعاء-الخميس : <span>09:00AM - 06:00PM</span></h5>
+                <h5>الجمعه-السبت : <span>10:00AM - 05:00PM</span></h5>
+                <h5>الأحد : <span>الطوارئ فقط</span></h5>
+                <h5>شخصى : <span>الاثنين - 10PM</span></h5>
+            </div>
+        </div>
+        <div class="col">
+            <h4 class="head ">الاقسام</h4>
+            <div class="links">
+                <a href="#">إعادة تأهيل</a>
+                <a href="#">التحليل المختبري</a>
+                <a href="#">جراحة شد الوجه</a>
+                <a href="#">شفط الدهون</a>
+            </div>
+        </div>
+        <div class="col">
+            <h4 class="head ">تواصل معنا</h4>
+            <div class="links">
+                <p><strong>العنوان:</strong> 1223 Fulton Street San <br>Diego CA 941-23 USA</p>
+                <p><strong>البريد الالكترونى:</strong> <a href="mailTo:nischinto@Gmail.Com">nischinto@Gmail.Com</a></p>
+                <p><strong>الهاتف:</strong> (+01) - 234 567 890 <br>(+01) - 345 678 901</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copy_right">
+        <p>Copyright © 2022. Created with love <br> by Ahmed Elsayed.</p>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

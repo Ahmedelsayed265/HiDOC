@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500&family=Tajawal:wght@400;500&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   line-height: 36px;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
@@ -41,10 +41,11 @@ a {
 body.RTL {
   direction: rtl;
   overflow-x: hidden;
+  font-family: "Tajawal", serif;
 }
 body.RTL header nav .logo img {
   bottom: 17px;
-  right: 80px;
+  right: 90px;
 }
 body.RTL header nav ul li a {
   font-size: 20px;
@@ -91,10 +92,11 @@ body.RTL footer .col .links h5 span {
 body.RTL footer .col .logo img {
   bottom: 16px;
   width: 14px;
-  right: 73px;
+  right: 90px;
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   background: #f4feff;
   position: relative;
 }
@@ -466,6 +468,7 @@ body .doctors .row .about_docs .text {
 body .doctors .row .about_docs h3 {
   font-size: 40px;
   margin-bottom: 20px;
+  line-height: 44px;
 }
 body .doctors .row .about_docs .dep_wrap {
   width: 100%;
@@ -958,6 +961,13 @@ body .copy_right p {
     top: 0;
     right: auto;
   }
+  body.RTL header main .left_main .head {
+    padding-top: 40px;
+  }
+  body.RTL header main .left_main .head h2 {
+    font-size: 30px;
+    line-height: 56px;
+  }
   body.RTL header nav.res_active .logo {
     gap: 8px;
   }
@@ -1030,7 +1040,7 @@ body header nav.res_active .nav_btns {
     padding-left: 30px;
   }
   body header main .left_main .head {
-    padding-top: 20px;
+    padding-top: 30px;
   }
   body header main .left_main .head h2 {
     font-size: 35px;
@@ -1174,7 +1184,7 @@ body header nav.res_active .nav_btns {
   }
   body .contact .hed {
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 64px;
   }
   body .contact .row .form_container form .info_grid {
