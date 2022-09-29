@@ -58,6 +58,9 @@ body.RTL header main .left_main {
   padding-left: 0;
   padding-right: 100px;
 }
+body.RTL header main .left_main .head h2 span {
+  letter-spacing: 0px;
+}
 body.RTL header main .left_main .counts {
   padding-right: 0;
 }
