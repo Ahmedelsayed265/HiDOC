@@ -45,8 +45,8 @@ body.RTL {
 }
 body.RTL header nav .logo img {
   width: 14px;
-  bottom: 19px;
-  right: 95px;
+  bottom: 20px;
+  right: 94px;
 }
 body.RTL header nav ul li a {
   font-size: 20px;
