@@ -5,7 +5,7 @@ body.RTL {
   font-family: "Tajawal", serif;
   header {
     nav .logo img {
-      width: 14px !important;
+      width: 14px;
       bottom: 19px;
       right: 95px;
     }
@@ -66,8 +66,8 @@ body.RTL {
     }
   }
   footer .col .logo img {
-    bottom: 16px;
-    width: 15px;
+    bottom: 15px;
+    width: 14px;
     right: 94px;
   }
 }
