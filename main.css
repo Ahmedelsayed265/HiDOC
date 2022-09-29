@@ -44,9 +44,9 @@ body.RTL {
   font-family: "Tajawal", serif;
 }
 body.RTL header nav .logo img {
-  width: 15px !important;
-  bottom: 16px;
-  right: 94px;
+  width: 14px !important;
+  bottom: 19px;
+  right: 95px;
 }
 body.RTL header nav ul li a {
   font-size: 20px;
@@ -969,7 +969,7 @@ body .copy_right p {
     padding-top: 40px;
   }
   body.RTL header main .left_main .head h2 {
-    font-size: 28px;
+    font-size: 34px;
     line-height: 60px;
   }
   body.RTL header nav.res_active .logo {
